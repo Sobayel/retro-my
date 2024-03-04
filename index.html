@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 6th</title>
+    <title>ReTroMy</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css" />
 </head>
+
 
 <body>
     <!-- navbar section -->
@@ -19,7 +21,7 @@
                     <h2 href="#" class="text-2xl lg:text-4xl font-black">ReTro<span class="text-[#797DFC]">S</span></h2>
                 </div>
                 <div class="flex-none">
-                    <div class="indicator gap-3">
+                    <div class="indicator gap-3 hidden lg:block">
                         <div class="tooltip hover:bg-[#797DFC] hover:text-white rounded-full" data-tip="Home">
                             <img src="./images/Frame 2.png" alt="" />
                         </div>
@@ -42,13 +44,14 @@
             </div>
         </nav>
     </section>
-    
+   
 <!-- banner section -->
 <section>
-    <div class="hero h-[500px] bg-[#12132D] w-full mx-auto rounded-3xl"
+    <div class="hero h-full  py-5 lg:py-32
+ bg-[#12132D] w-full mx-auto rounded-3xl"
         style="background-image: url(./images/bgbanner.png)">
-        <div class="flex w-[80%] mx-auto justify-between gap-10">
-            <div class="max-w-md">
+        <div class="flex flex-col lg:flex-row w-[80%] mx-auto justify-between gap-10">
+            <div class="">
                 <h1 class="mb-5 text-5xl font-bold text-white">
                     Welcome to the <br />
                     <span class="bg-gradient-to-r from-40% from-[#797dfc] to-[#494c7e96] to-80% text-transparent bg-clip-text">ReTroS </span>Forum
@@ -57,7 +60,7 @@
                     Welcome to the ReTroForum, where nostalgia meets modernity,
                     embracing the past while shaping the future of discourse
                 </p>
-                <div onclick="handleSearch()" 
+                <div onclick="handleSearch()"
                     class="input input-bordered flex items-center rounded-full w-80 gap-2">
                     <input type="text" class="grow" placeholder="Search here anything" />
                     <button id="search-box"
@@ -90,6 +93,7 @@
     </div>
 </section>
 
+
 <!-- let's discuss -->
 <section>
     <div class="mt-16">
@@ -100,9 +104,11 @@
             Yes, you can run unit tests and view the results directly within the
             app. The integrated testing features allow for a streamlined .
         </p>
-        <div id="category-container" class="mx-auto bg-white rounded-3xl flex flex-row mt-10 gap-14">
+        <div id="category-container" class="mx-auto bg-white rounded-3xl flex flex-col lg:flex-row mt-10 gap-14">
+
 
             <div id="news-container">
+
 
             </div>
             <div>
@@ -117,11 +123,13 @@
                 <!-- output -->
                 <div id="summery">
 
+
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- join our forum -->
 <section class="hero h-[400px] bg-[#12132D] w-full mx-auto rounded-3xl mt-20">
@@ -143,6 +151,7 @@
     </div>
 </section>
 
+
 <!-- latest poste -->
 <section>
     <div>
@@ -156,11 +165,13 @@
             </p>
         </div>
         <!-- card -->
-        <div id="latest-container" class="bg-base-100 flex">
+        <div id="latest-container" class="bg-base-100 grid grid-cols-1 lg:grid-cols-3 gap-5">
+
 
         </div>
     </div>
 </section>
+
 
 <!-- footer -->
 <footer class="world-container">
@@ -170,9 +181,7 @@
     <div class="footer-content">
         <p class="footer-description text-[#12132D99]">
             Back in time, vinyl spins, neon lights gleam, Pac-Man chomps quarters,
-            mix tapes weave stories, Rubik's cubes perplex <br />
-            Walkman serenades, boomboxes blast, leg warmers dance, and cassette
-            tapes hiss memories
+            mix tapes weave stories, Rubik's cubes perplex.
         </p>
     </div>
     <div class="footer-images-container">
@@ -181,7 +190,7 @@
         <img src="./images/3.png" alt="" />
         <img src="./images/4.png" alt="" />
     </div>
-    <hr class="my-8"/>
+    <hr/>
     <div class="copyright">
         <p class="text-[#12132D99] font-semibold">2017, All Rights Reserved.</p>
     </div>
@@ -189,4 +198,6 @@
     <script src="app.js"></script>
 </body>
 
+
 </html>
+
