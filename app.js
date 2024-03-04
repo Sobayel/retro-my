@@ -44,7 +44,7 @@ const loadNews = async() =>{
                                           </div>
                                     </div>
                                     <div id="read">
-                                        <button  onclick="clickHandle('${item.title}', ${item.view_count})"><img src="./images/Group 40106.png" alt=""></button>
+                                        <button class="hover:bg-[#797DFC] hover:text-white rounded-full"  onclick="clickHandle('${item.title}', ${item.view_count})"><img src="./images/Group 40106.png" alt=""></button>
                                     </div>
                                 </div>
                             </div>
